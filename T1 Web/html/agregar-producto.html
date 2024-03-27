@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Agregar Producto</title>
+        <link rel="stylesheet" type="text/css" href="../css/agregar-producto.css">
+        <script src="../js/agregar-producto.js" defer></script>
+    </head>
+    <body>
+        <form class="formulario" id="agregar-producto-form">
+            <div id="tipo-producto" class="grupo-input">
+              <label for="tipo-producto">Tipo producto:</label>
+              <select id="tipo-producto" name="tipo-producto" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="fruta">Fruta</option>
+                    <option value="verdura">Verdura</option>
+              </select>
+            </div>
+            <div id="seleccion-frutas" class="grupo-input">
+                <label for="frutas">Selecciona frutas:</label>
+                <select id="frutas" name="frutas" multiple required>
+                    <option value="arandano">Arándano</option>
+                    <option value="frambuesa">Frambuesa</option>
+                    <option value="frutilla">Frutilla</option>
+                    <option value="grosella">Grosella</option>
+                    <option value="mora">Mora</option>
+                    <option value="limon">Limón</option>
+                    <option value="mandarina">Mandarina</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="pomelo">Pomelo</option>
+                    <option value="melon">Melón</option>
+                    <option value="sandia">Sandía</option>
+                    <option value="palta">Palta</option>
+                    <option value="chirimoya">Chirimoya</option>
+                    <option value="coco">Coco</option>
+                    <option value="datil">Dátil</option>
+                    <option value="kiwi">Kiwi</option>
+                    <option value="mango">Mango</option>
+                    <option value="papaya">Papaya</option>
+                    <option value="pina">Piña</option>
+                    <option value="platano">Plátano</option>
+                    <option value="damasco">Damasco</option>
+                    <option value="cereza">Cereza</option>
+                    <option value="ciruela">Ciruela</option>
+                    <option value="higo">Higo</option>
+                    <option value="kaki">Kaki</option>
+                    <option value="manzana">Manzana</option>
+                    <option value="durazno">Durazno</option>
+                    <option value="nectarin">Nectarin</option>
+                    <option value="nispero">Níspero</option>
+                    <option value="pera">Pera</option>
+                    <option value="uva">Uva</option>
+                    <option value="almendra">Almendra</option>
+                    <option value="avellana">Avellana</option>
+                    <option value="mani">Maní</option>
+                    <option value="castana">Castaña</option>
+                    <option value="nuez">Nuez</option>
+                    <option value="pistacho">Pistacho</option>
+                </select>
+            </div>
+            <div id="seleccion-verduras" class="grupo-input">
+                <label for="verduras">Selecciona verduras:</label>
+                <select id="verduras" name="verduras" multiple required>
+                    <option value="brocoli">Brócoli</option>
+                    <option value="repollo">Repollo</option>
+                    <option value="coliflor">Coliflor</option>
+                    <option value="rabano">Rábano</option>
+                    <option value="alcachofa">Alcachofa</option>
+                    <option value="lechuga">Lechuga</option>
+                    <option value="zapallo">Zapallo</option>
+                    <option value="pepino">Pepino</option>
+                    <option value="haba">Haba</option>
+                    <option value="maiz">Maíz</option>
+                    <option value="champinon">Champiñón</option>
+                    <option value="acelga">Acelga</option>
+                    <option value="apio">Apio</option>
+                    <option value="espinaca">Espinaca</option>
+                    <option value="perejil">Perejil</option>
+                    <option value="ajo">Ajo</option>
+                    <option value="cebolla">Cebolla</option>
+                    <option value="esparrago">Espárrago</option>
+                    <option value="puerro">Puerro</option>
+                    <option value="acelga">Acelga</option>
+                    <option value="espinaca">Espinaca</option>
+                    <option value="remolacha">Remolacha</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="papa">Papa</option>
+                    <option value="pimiento">Pimiento</option>
+                    <option value="tomate">Tomate</option>
+                    <option value="zanahoria">Zanahoria</option>
+                </select>
+            </div>
+            <div id="descripcion" class="grupo-input">
+                <label for="descripcion">Descripción</label>
+                <input id="descripcion" name="descripcion" type="descripcion">
+            </div>
+            <div id="fotos-de-producto" class="grupo-input">
+                <label for="fotos-de-producto">Fotos de producto</label>
+                <input id="fotos-de-producto" name="fotos-de-producto" type="file" required>
+            </div>
+            <div id="region" class="grupo-input">
+                <label for="region">Región:</label>
+                <select id="region" name="region" required>
+                      <option value="">Seleccionar...</option>
+                      <option value="region-metropolitana">Región Metropolitana</option>
+                      <option value="region-arica-parinacota">Región de Arica y Parinacota</option>
+                </select>
+              </div>
+            <div class="botones">
+              <button type="button" id="envio">
+                Agregar Producto(s)
+              </button>
+            </div>
+          </form>
+    </body>
+</html>
