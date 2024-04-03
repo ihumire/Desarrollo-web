@@ -8,7 +8,7 @@
     <body>
       <div id="top">
         <p id="E1">Error: Seleccione el tipo de producto.</p>
-        <p id="E2">Error: Seleccione el primer producto.</p>
+        <p id="E2">Error: Seleccione mínimo un producto.</p>
         <p id="E9">¿Confirma productos para agregar?</p>
         <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
         <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
@@ -26,7 +26,23 @@
         <br>
         <label for="producto1">Producto 1:</label><br>
         <select name="producto1" id="producto1">
-          <option value="--Seleccione un producto--">--Seleccione una comuna--</option>
+          <option value="--Seleccione un producto--">--Seleccione un producto--</option>
+        </select><br>
+        <label for="producto2">Producto 2:</label><br>
+        <select name="producto2" id="producto2">
+          <option value="--Seleccione un producto--">--Seleccione un producto--</option>
+        </select><br>
+        <label for="producto3">Producto 3:</label><br>
+        <select name="producto3" id="producto3">
+          <option value="--Seleccione un producto--">--Seleccione un producto--</option>
+        </select><br>
+        <label for="producto4">Producto 4:</label><br>
+        <select name="producto4" id="producto4">
+          <option value="--Seleccione un producto--">--Seleccione un producto--</option>
+        </select><br>
+        <label for="producto5">Producto 5:</label><br>
+        <select name="producto5" id="producto5">
+          <option value="--Seleccione un producto--">--Seleccione un producto--</option>
         </select><br>
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form>
