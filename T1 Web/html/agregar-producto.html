@@ -8,6 +8,7 @@
     <body>
       <div id="top">
         <p id="E1">Error: Seleccione el tipo de producto.</p>
+        <p id="E2">Error: Seleccione el primer producto.</p>
         <p id="E9">¿Confirma productos para agregar?</p>
         <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
         <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
@@ -17,12 +18,16 @@
         <label for="tipo-producto">Tipo producto:</label><br>
         <select id="tipo-producto" name="tipo-producto" size=1 
         onfocus='this.size=3' onblur='this.size=1' 
-        onchange='this.size=1; this.blur();'> <!--selectFrutaOrVerdura(this.value);-->
-            <option value="0">Seleccionar...</option>
-            <option value="1">Fruta</option>
-            <option value="2">Verdura</option>
+        onchange='this.size=1; this.blur(); setFrutaOrVerdura(this.value);'> <!--selectFrutaOrVerdura(this.value);-->
+          <option value="0">Seleccionar...</option>
+          <option value="1">Fruta</option>
+          <option value="2">Verdura</option>
         </select>
         <br>
+        <label for="producto1">Producto 1:</label><br>
+        <select name="producto1" id="producto1">
+          <option value="--Seleccione un producto--">--Seleccione una comuna--</option>
+        </select><br>
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form>
     </body>
