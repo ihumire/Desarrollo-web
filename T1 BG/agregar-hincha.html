@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Registro de hinchas STGO 2023</title>
+		<link rel="stylesheet" href="form-style.css"/>
+		<script src="formH-js.js"></script>
+	</head>
+	<body>
+		<h2>Formulario de inscripción de hinchas STGO2023</h2>
+		<div id="top">
+			<p id="E1">Error: Seleccione al menos un deporte de su interés.</p>
+			<p id="E2">Error: Seleccione una región.</p>
+			<p id="E3">Error: Seleccione una comuna.</p>
+			<p id="E4">Error: Seleccione un medio de transporte válido</p>
+			<p id="E5">Error: Ingrese un nombre válido</p>
+			<p id="E6">Error: Ingrese un correo electrónico válido</p>
+			<p id="E7">Error: Ingrese un número de celular válido.</p>
+			<p id="E8">Error: Comentario no válido</p>
+			<p id="E9">¿Confirma el registro de este hincha?</p>
+			<button type="submit" id="confirmar" form="formularioh">Sí, confirmo</button>
+			<button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
+		</div>
+		<br>
+		<form id="formularioh" action="#" onsubmit="Felicitaciones()">
+			<label for="dep1">Seleccione los deportes de su interés (al menos 1):</label><br>
+			<select name="deportes" id="dep1" size=1
+			onfocus='this.size=6;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+				<option value="0">--Seleccione una opción--</option>
+				<option value="1">Clavados</option>
+				<option value="2">Natación</option>
+				<option value="3">Natación artística</option>
+				<option value="4">Polo acuático</option>
+				<option value="5">Natación en aguas abiertas</option>
+				<option value="6">Maratón</option>
+				<option value="7">Marcha</option>
+				<option value="8">Atletismo</option>
+				<option value="9">Bádminton</option>
+				<option value="10">Balonmano</option>
+				<option value="11">Básquetbol</option>
+				<option value="12">Básquetbol 3x3</option>
+				<option value="13">Béisbol</option>
+				<option value="14">Boxeo</option>
+				<option value="15">Bowling</option>
+				<option value="16">Breaking</option>
+				<option value="17">Canotaje slalom</option>
+				<option value="18">Canotaje de velocidad</option>
+				<option value="19">BMX freestyle</option>
+				<option value="20">BMX racing</option>
+				<option value="21">Mountain bike</option>
+				<option value="22">Ciclismo de pista</option>
+				<option value="23">Ciclismo en ruta</option>
+				<option value="24">Adiestramiento ecuestre</option>
+				<option value="25">Evento completo ecuestre</option>
+				<option value="26">Salto ecuestre</option>
+				<option value="27">Escalada deportiva</option>
+				<option value="28">Esgrima</option>
+				<option value="29">Esquí acuático & Wakeboard</option>
+				<option value="30">Fútbol</option>
+				<option value="31">Gimnasia artística masculina</option>
+				<option value="32">Gimnasia artística femenina</option>
+				<option value="33">Gimnasia rítmica</option>
+				<option value="34">Gimnasia en trampolín</option>
+				<option value="35">Golf</option>
+				<option value="36">Hockey en césped</option>
+				<option value="37">Judo</option>
+				<option value="38">Karate</option>
+				<option value="39">Levantamiento de pesas</option>
+				<option value="40">Lucha</option>
+				<option value="41">Patinaje artístico</option>
+				<option value="42">Skateboarding</option>
+				<option value="43">Patinaje de velocidad</option>
+				<option value="44">Pelota vasca</option>
+				<option value="45">Pentatlón moderno</option>
+				<option value="46">Racquetball</option>
+				<option value="47">Remo</option>
+				<option value="48">Rugby 7</option>
+				<option value="49">Sóftbol</option>
+				<option value="50">Squash</option>
+				<option value="51">Surf</option>
+				<option value="52">Taekwondo</option>
+				<option value="53">Tenis</option>
+				<option value="54">Tenis de mesa</option>
+				<option value="55">Tiro</option>
+				<option value="56">Tiro con arco</option>
+				<option value="57">Triatlón</option>
+				<option value="58">Vela</option>
+				<option value="59">Vóleibol</option>
+				<option value="60">Vóleibol playa</option>
+			</select><br>
+			<select name="deportes2" id="dep2" size=1
+			onfocus='this.size=6;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+				<option value="0">--Seleccione una opción--</option>
+				<option value="1">Clavados</option>
+				<option value="2">Natación</option>
+				<option value="3">Natación artística</option>
+				<option value="4">Polo acuático</option>
+				<option value="5">Natación en aguas abiertas</option>
+				<option value="6">Maratón</option>
+				<option value="7">Marcha</option>
+				<option value="8">Atletismo</option>
+				<option value="9">Bádminton</option>
+				<option value="10">Balonmano</option>
+				<option value="11">Básquetbol</option>
+				<option value="12">Básquetbol 3x3</option>
+				<option value="13">Béisbol</option>
+				<option value="14">Boxeo</option>
+				<option value="15">Bowling</option>
+				<option value="16">Breaking</option>
+				<option value="17">Canotaje slalom</option>
+				<option value="18">Canotaje de velocidad</option>
+				<option value="19">BMX freestyle</option>
+				<option value="20">BMX racing</option>
+				<option value="21">Mountain bike</option>
+				<option value="22">Ciclismo de pista</option>
+				<option value="23">Ciclismo en ruta</option>
+				<option value="24">Adiestramiento ecuestre</option>
+				<option value="25">Evento completo ecuestre</option>
+				<option value="26">Salto ecuestre</option>
+				<option value="27">Escalada deportiva</option>
+				<option value="28">Esgrima</option>
+				<option value="29">Esquí acuático & Wakeboard</option>
+				<option value="30">Fútbol</option>
+				<option value="31">Gimnasia artística masculina</option>
+				<option value="32">Gimnasia artística femenina</option>
+				<option value="33">Gimnasia rítmica</option>
+				<option value="34">Gimnasia en trampolín</option>
+				<option value="35">Golf</option>
+				<option value="36">Hockey en césped</option>
+				<option value="37">Judo</option>
+				<option value="38">Karate</option>
+				<option value="39">Levantamiento de pesas</option>
+				<option value="40">Lucha</option>
+				<option value="41">Patinaje artístico</option>
+				<option value="42">Skateboarding</option>
+				<option value="43">Patinaje de velocidad</option>
+				<option value="44">Pelota vasca</option>
+				<option value="45">Pentatlón moderno</option>
+				<option value="46">Racquetball</option>
+				<option value="47">Remo</option>
+				<option value="48">Rugby 7</option>
+				<option value="49">Sóftbol</option>
+				<option value="50">Squash</option>
+				<option value="51">Surf</option>
+				<option value="52">Taekwondo</option>
+				<option value="53">Tenis</option>
+				<option value="54">Tenis de mesa</option>
+				<option value="55">Tiro</option>
+				<option value="56">Tiro con arco</option>
+				<option value="57">Triatlón</option>
+				<option value="58">Vela</option>
+				<option value="59">Vóleibol</option>
+				<option value="60">Vóleibol playa</option>
+			</select><br>
+			<select name="deportes3" id="dep3" size=1
+			onfocus='this.size=6;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+				<option value="0">--Seleccione una opción--</option>
+				<option value="1">Clavados</option>
+				<option value="2">Natación</option>
+				<option value="3">Natación artística</option>
+				<option value="4">Polo acuático</option>
+				<option value="5">Natación en aguas abiertas</option>
+				<option value="6">Maratón</option>
+				<option value="7">Marcha</option>
+				<option value="8">Atletismo</option>
+				<option value="9">Bádminton</option>
+				<option value="10">Balonmano</option>
+				<option value="11">Básquetbol</option>
+				<option value="12">Básquetbol 3x3</option>
+				<option value="13">Béisbol</option>
+				<option value="14">Boxeo</option>
+				<option value="15">Bowling</option>
+				<option value="16">Breaking</option>
+				<option value="17">Canotaje slalom</option>
+				<option value="18">Canotaje de velocidad</option>
+				<option value="19">BMX freestyle</option>
+				<option value="20">BMX racing</option>
+				<option value="21">Mountain bike</option>
+				<option value="22">Ciclismo de pista</option>
+				<option value="23">Ciclismo en ruta</option>
+				<option value="24">Adiestramiento ecuestre</option>
+				<option value="25">Evento completo ecuestre</option>
+				<option value="26">Salto ecuestre</option>
+				<option value="27">Escalada deportiva</option>
+				<option value="28">Esgrima</option>
+				<option value="29">Esquí acuático & Wakeboard</option>
+				<option value="30">Fútbol</option>
+				<option value="31">Gimnasia artística masculina</option>
+				<option value="32">Gimnasia artística femenina</option>
+				<option value="33">Gimnasia rítmica</option>
+				<option value="34">Gimnasia en trampolín</option>
+				<option value="35">Golf</option>
+				<option value="36">Hockey en césped</option>
+				<option value="37">Judo</option>
+				<option value="38">Karate</option>
+				<option value="39">Levantamiento de pesas</option>
+				<option value="40">Lucha</option>
+				<option value="41">Patinaje artístico</option>
+				<option value="42">Skateboarding</option>
+				<option value="43">Patinaje de velocidad</option>
+				<option value="44">Pelota vasca</option>
+				<option value="45">Pentatlón moderno</option>
+				<option value="46">Racquetball</option>
+				<option value="47">Remo</option>
+				<option value="48">Rugby 7</option>
+				<option value="49">Sóftbol</option>
+				<option value="50">Squash</option>
+				<option value="51">Surf</option>
+				<option value="52">Taekwondo</option>
+				<option value="53">Tenis</option>
+				<option value="54">Tenis de mesa</option>
+				<option value="55">Tiro</option>
+				<option value="56">Tiro con arco</option>
+				<option value="57">Triatlón</option>
+				<option value="58">Vela</option>
+				<option value="59">Vóleibol</option>
+				<option value="60">Vóleibol playa</option>
+			</select><br>
+			<label for="rg">Seleccione su región de residencia:</label><br>
+			<select name="Region" id="rg" size=1
+			onfocus='this.size=8;' onblur='this.size=1;'
+			onchange='this.size=1; this.blur(); setComunas(this.value);'>
+				<option value="0">--Seleccione su región--</option>
+				<option value="15">Arica y Parinacota</option>
+				<option value="1">Tarapacá</option>
+				<option value="2">Antofagasta</option>
+				<option value="3">Atacama</option>
+				<option value="4">Coquimbo</option>
+				<option value="5">Valparaíso</option>
+				<option value="13">Metropolitana</option>
+				<option value="6">O'Higgins</option>
+				<option value="7">Maule</option>
+				<option value="16">Ñuble</option>
+				<option value="8">Bio-Bio</option>
+				<option value="9">Araucanía</option>
+				<option value="14">Los Ríos</option>
+				<option value="10">Los Lagos</option>
+				<option value="11">Aysén</option>
+				<option value="12">Magallanes</option>
+			</select><br>
+			<label for="cm">Seleccione su comuna de residencia:</label><br>
+			<select name="Comuna" id="cm">
+				<option value="--Seleccione una comuna--">--Seleccione una comuna--</option>
+			</select><br>
+			<label for="trans">Escoja su modo de transporte:</label><br>
+			<select name="Transporte" id="trans">
+				<option value="0">--Opciones--</option>
+				<option value="Particular">Particular</option>
+				<option value="Transporte">Locomoción pública</option>
+			</select><br>
+			<label for="Nmbr">Nombre:</label><br>
+			<input type="text" name="Nombre" id="Nmbr" placeholder="Nombre Apellido"><br>
+			<label for="mail">Correo electrónico:</label><br>
+			<input type="text" name="Correo" id="mail" placeholder="mail@dominio.com"><br>
+			<label for="num">Teléfono celular:</label><br>
+			<input type="text" name="Celular" id="num" placeholder="ej: +569 9999 9999"><br>
+			<label for="comment">Comentario:</label><br>
+			<input type="text" name="Comentario" id="comment"><br>
+			<input type="button" value="Registrar hincha" onclick="Validar()">
+		</form><br>
+		<div id="Volver">
+			<a href="index.html"> Volver </a>
+		</div>
+	</body>
+</html>

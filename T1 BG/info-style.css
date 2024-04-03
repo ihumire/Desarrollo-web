@@ -1,0 +1,68 @@
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(to top, rgba(0,35,98,1),
+	rgba(50,11,135,1), rgba(153,35,61,1));
+}
+
+h2 {
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+	font-family: Arial;
+}
+
+h4 {
+	font-size: 1.2vw;
+	color: white;
+	text-align: left;
+	font-family: Arial;
+	display: block;
+	padding-left: 1%;
+}
+
+a {
+	font-family: Arial;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: rgba(70, 130, 180, 1);
+	width: 10%;
+	height: 4%;
+	padding: 1% 1%;
+	border-style: solid;
+	border-color: black;
+	margin-left: 18%;
+}
+
+div {
+	display: block;
+	vertical-align: center;
+	padding-bottom: 2%;
+}
+
+img {
+	display: flex;
+	float: left;
+	width: 15%;
+	padding: 1%;
+}
+
+ul {
+	display: inline-block;
+	padding-top: 2%;
+	font-family: Arial;
+	color: white;
+}
+
+li {
+	padding-bottom: 1%;
+}
+
+.artesania {
+	display: flex;
+	float: left;
+	width: 640px;
+	height: 480px;
+	padding: 1%;
+}

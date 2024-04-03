@@ -1,3 +1,10 @@
+#top {
+	display: none;
+	padding: 0.5% 1%;
+	background-color: rgba(29, 131, 72, 1);
+	border-style: dashed;
+	width: 50%
+}
 .formulario {
     display: flex;
     flex-direction: column;

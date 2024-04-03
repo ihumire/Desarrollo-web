@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	<meta charset="utf-8">
+		<title>Registro de artesanos STGO 2023</title>
+		<link rel="stylesheet" href="form-style.css"/>
+		<script src="formA-js.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			<p id="E1">Error: Seleccione una región.</p>
+			<p id="E2">Error: Seleccione una comuna.</p>
+			<p id="E3">Error: Seleccione al menos un tipo de artesanías</p>
+			<p id="E4">Error: Suba al menos una imagen (máximo 3).</p>
+			<p id="E5">Error: Ingrese un nombre válido</p>
+			<p id="E6">Error: Ingrese un correo electrónico válido</p>
+			<p id="E7">Error: Ingrese un número de celular válido.</p>
+			<p id="E8">¿Confirma el registro de este artesano?</p>
+			<button type="submit" id="confirmar" form="formularioa">Sí, confirmo</button>
+			<button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
+		</div>
+		<h2>Formulario de inscripción artesanos STGO2023</h2>
+		<form id="formularioa" action="#" onsubmit="Felicitaciones()">
+			<label for="rg">Seleccione su región de residencia:</label><br>
+			<select name="Region" id="rg" size=1
+			onfocus='this.size=8;' onblur='this.size=1;' 
+			onchange='this.size=1; this.blur(); setComunas(this.value);'>
+				<option value="0">--Seleccione su región--</option>
+				<option value="15">Arica y Parinacota</option>
+				<option value="1">Tarapacá</option>
+				<option value="2">Antofagasta</option>
+				<option value="3">Atacama</option>
+				<option value="4">Coquimbo</option>
+				<option value="5">Valparaíso</option>
+				<option value="13">Metropolitana</option>
+				<option value="6">O'Higgins</option>
+				<option value="7">Maule</option>
+				<option value="16">Ñuble</option>
+				<option value="8">Bio-Bio</option>
+				<option value="9">Araucanía</option>
+				<option value="14">Los Ríos</option>
+				<option value="10">Los Lagos</option>
+				<option value="11">Aysén</option>
+				<option value="12">Magallanes</option>
+			</select><br>
+			<label for="cm">Seleccione su comuna de residencia:</label><br>
+			<select name="Comuna" id="cm">
+				<option>--Seleccione una comuna--</option>
+			</select><br>
+			<label for="tipo">Seleccione el tipo de artesanía (al menos 1):</label><br>
+			<select name="Artesania" id="tipo">
+				<option value="0">--Seleccione su artesanía--</option>
+				<option value="Mármol">Mármol</option>
+				<option value="Madera">Madera</option>
+				<option value ="Cerámica">Cerámica</option>
+				<option value="Mimbre">Mimbre</option>
+				<option value="Metal">Metal</option>
+				<option value="Cuero">Cuero</option>
+				<option value="Tela">Tela</option>
+				<option value="Joyería">Joyería</option>
+				<option value="Otro">Otro</option>
+			</select><br>
+			<select name="Artesania2" id="tipo2">
+				<option value="0">--Seleccione su artesanía--</option>
+				<option value="Mármol">Mármol</option>
+				<option value="Madera">Madera</option>
+				<option value ="Cerámica">Cerámica</option>
+				<option value="Mimbre">Mimbre</option>
+				<option value="Metal">Metal</option>
+				<option value="Cuero">Cuero</option>
+				<option value="Tela">Tela</option>
+				<option value="Joyería">Joyería</option>
+				<option value="Otro">Otro</option>
+			</select><br>
+			<select name="Artesania3" id="tipo3">
+				<option value="0">--Seleccione su artesanía--</option>
+				<option value="Mármol">Mármol</option>
+				<option value="Madera">Madera</option>
+				<option value ="Cerámica">Cerámica</option>
+				<option value="Mimbre">Mimbre</option>
+				<option value="Metal">Metal</option>
+				<option value="Cuero">Cuero</option>
+				<option value="Tela">Tela</option>
+				<option value="Joyería">Joyería</option>
+				<option value="Otro">Otro</option>
+			</select><br>
+			<label for="des">Describa su artesanía:</label><br>
+			<textarea cols="50" rows="4" id="des" name="descripcion">Descripción
+			</textarea><br>
+			<label for="pics">Ingrese imágenes (mín: 1, máx: 3):</label><br>
+			<input type="file" id="pics" name="fotos" multiple
+			accept="image/*"><br>
+			<label for="Nmbr">Nombre:</label><br>
+			<input type="text" name="Nombre" id="Nmbr" placeholder="Nombre Apellido"><br>
+			<label for="mail">Correo electrónico:</label><br>
+			<input type="text" name="Correo" id="mail" placeholder="mail@dominio.com"><br>
+			<label for="num">Teléfono celular:</label><br>
+			<input type="text" name="Celular" id="num" placeholder="ej: +569 9999 9999"><br>
+			<input type="button" value="Registrar Artesano" onclick="Validar()">
+		</form><br>
+		<div id="Volver">
+			<a href="index.html"> Volver </a>
+		</div>
+	</body>
+</html>
