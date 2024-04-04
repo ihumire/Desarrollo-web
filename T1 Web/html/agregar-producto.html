@@ -10,6 +10,8 @@
         <p id="E1">Error: Seleccione el tipo de producto.</p>
         <p id="E2">Error: Seleccione mínimo un producto.</p>
         <p id="E3">Error: Ingrese entre uno y tres archivos.</p>
+        <p id="E4">Error: Seleccione una región.</p>
+        <p id="E5">Error: Seleccione una comuna</p>
         <p id="E9">¿Confirma productos para agregar?</p>
         <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
         <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
@@ -50,6 +52,32 @@
         </textarea><br>
         <label for="pics">Fotos de productos:</label><br>
         <input type="file" id="fotos" name="fotos" multiple accept="image/*"><br>
+        <label for="region">Región:</label><br>
+        <select name="region" id="region" size=1
+        onfocus='this.size=8;' onblur='this.size=1;' 
+        onchange='this.size=1; this.blur(); setComuna(this.value); '>
+          <option value="0">--Seleccione su región--</option>
+          <option value="15">Arica y Parinacota</option>
+          <option value="1">Tarapacá</option>
+          <option value="2">Antofagasta</option>
+          <option value="3">Atacama</option>
+          <option value="4">Coquimbo</option>
+          <option value="5">Valparaíso</option>
+          <option value="13">Metropolitana</option>
+          <option value="6">O'Higgins</option>
+          <option value="7">Maule</option>
+          <option value="16">Ñuble</option>
+          <option value="8">Bio-Bio</option>
+          <option value="9">Araucanía</option>
+          <option value="14">Los Ríos</option>
+          <option value="10">Los Lagos</option>
+          <option value="11">Aysén</option>
+          <option value="12">Magallanes</option>
+        </select><br>
+        <label for="comuna">Comuna:</label><br>
+        <select name="comuna" id="comuna">
+          <option>--Seleccione una comuna--</option>
+        </select><br>
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form>
     </body>
