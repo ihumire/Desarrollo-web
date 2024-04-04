@@ -9,6 +9,7 @@
       <div id="top">
         <p id="E1">Error: Seleccione el tipo de producto.</p>
         <p id="E2">Error: Seleccione mínimo un producto.</p>
+        <p id="E3">Error: Ingrese entre uno y tres archivos.</p>
         <p id="E9">¿Confirma productos para agregar?</p>
         <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
         <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
@@ -44,6 +45,11 @@
         <select name="producto5" id="producto5">
           <option value="--Seleccione un producto--">--Seleccione un producto--</option>
         </select><br>
+        <label for="des">Descripción:</label><br>
+        <textarea cols="50" rows="4" id="descripcion" name="descripcion">Descripción
+        </textarea><br>
+        <label for="pics">Fotos de productos:</label><br>
+        <input type="file" id="fotos" name="fotos" multiple accept="image/*"><br>
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form>
     </body>

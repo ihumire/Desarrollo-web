@@ -36,19 +36,22 @@ function setFrutaOrVerdura(value) {
 
 function Validar() {
 	let tipoProducto = document.getElementById("tipo-producto");
+	let producto1 = document.getElementById("producto1");
+	let producto2 = document.getElementById("producto2");
+	let producto3 = document.getElementById("producto3");
+	let producto4 = document.getElementById("producto4");
+	let producto5 = document.getElementById("producto5");
+	let descripcion = document.getElementById("descripcion");
+	let fotos = document.getElementById("fotos");
+
 	tipoProducto.required = true;
 	let ValidTipoProducto = tipoProducto.value != "0";
-	let producto1 = document.getElementById("producto1");
 	let ValidProducto1 = producto1.value != "--Seleccione un producto--";
-	let producto2 = document.getElementById("producto2");
 	let ValidProducto2 = producto2.value != "--Seleccione un producto--";
-	let producto3 = document.getElementById("producto3");
 	let ValidProducto3 = producto3.value != "--Seleccione un producto--";
-	let producto4 = document.getElementById("producto4");
 	let ValidProducto4 = producto4.value != "--Seleccione un producto--";
-	let producto5 = document.getElementById("producto5");
 	let ValidProducto5 = producto5.value != "--Seleccione un producto--";
-	
+
 	let ValidProductos = false;
 	let listValidProductos = [ValidProducto1, ValidProducto2, ValidProducto3, ValidProducto4, ValidProducto5];
 	let lenListValidProductos = listValidProductos.length;
@@ -57,10 +60,13 @@ function Validar() {
 			ValidProductos = true;
 		}
 	}
+
+	let ValidFotos = fotos.files.length > 0 && fotos.files.length < 4;
 	
 	let space = document.getElementById("top");
 	let m1 = document.getElementById("E1");
 	let m2 = document.getElementById("E2");
+	let m3 = document.getElementById("E3");
 	let m9 = document.getElementById("E9");
 	let botonConfirmar = document.getElementById("confirmar");
 	let botonNoConfirmar = document.getElementById("no-confirmar");
@@ -74,17 +80,23 @@ function Validar() {
 	if (!ValidProductos) {
 		m2.style.display = "block";
 	} else {m2.style.display = "none";}
+	
+	if (!ValidFotos) {
+		m3.style.display = "block";
+	} else {m3.style.display = "none";}
 
-	if (ValidTipoProducto && ValidProductos) {
-			m9.style.display = "block";
-			botonConfirmar.style.display = "block";
-			botonNoConfirmar.style.display = "block";
-			tipoProducto.disabled = true;
-			producto1.disabled = true;
-			producto2.disabled = true;
-			producto3.disabled = true;
-			producto4.disabled = true;
-			producto5.disabled = true;
+	if (ValidTipoProducto && ValidProductos && ValidFotos) {
+		m9.style.display = "block";
+		botonConfirmar.style.display = "block";
+		botonNoConfirmar.style.display = "block";
+		tipoProducto.disabled = true;
+		producto1.disabled = true;
+		producto2.disabled = true;
+		producto3.disabled = true;
+		producto4.disabled = true;
+		producto5.disabled = true;
+		descripcion.disabled = true;
+		fotos.disabled = true;
 		} 
 	else {
 		m9.style.display = "none";
@@ -102,6 +114,8 @@ function Felicitaciones() {
 	let producto3 = document.getElementById("producto3");
 	let producto4 = document.getElementById("producto4");
 	let producto5 = document.getElementById("producto5");
+	let descripcion = document.getElementById("descripcion");
+	let fotos = document.getElementById("fotos");
 	
 	TipoProducto.disabled = false;
 	producto1.disabled = false;
@@ -109,6 +123,8 @@ function Felicitaciones() {
 	producto3.disabled = false;
 	producto4.disabled = false;
 	producto5.disabled = false;
+	descripcion.disabled = false;
+	fotos.disabled = false;
 	
 	alert("Agregación exitosa de productos.");
 }
@@ -121,7 +137,9 @@ function goBack() {
 	let producto3 = document.getElementById("producto3");
 	let producto4 = document.getElementById("producto4");
 	let producto5 = document.getElementById("producto5");
-	
+	let descripcion = document.getElementById("descripcion");
+	let fotos = document.getElementById("fotos");
+
 	let space = document.getElementById("top");
 	let m9 = document.getElementById("E9");
 	let botonConfirmar = document.getElementById("confirmar");
@@ -137,5 +155,7 @@ function goBack() {
 	producto3.disabled = false;
 	producto4.disabled = false;
 	producto5.disabled = false;
-	
+	descripcion.disabled = false;
+	fotos.disabled = false;
+
 }
