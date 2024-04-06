@@ -6,26 +6,30 @@
         <script src="../js/agregar-producto.js"></script>
     </head>
     <body>
-      <div id="top">
+      <div id="felicitacion" >
+        <p>Hemos recibido el registro de producto. Muchas gracias.</p>
+        <a href="index.html"> Volver a la portada. </a><br>
+      </div>
+      <div id="top" >
         <p id="E1">Error: Seleccione el tipo de producto.</p>
         <p id="E2">Error: Seleccione mínimo un producto.</p>
         <p id="E3">Error: Ingrese entre uno y tres archivos.</p>
         <p id="E4">Error: Seleccione una región.</p>
-        <p id="E5">Error: Seleccione una comuna</p>
-        <p id="E6">Error: Ingrese un nombre de productor válido</p>
-        <p id="E7">Error: Ingrese un email de productor válido</p>
+        <p id="E5">Error: Seleccione una comuna.</p>
+        <p id="E6">Error: Ingrese un nombre de productor válido.</p>
+        <p id="E7">Error: Ingrese un email de productor válido.</p>
         <p id="E8">Error: Ingrese un número de celular de productor válido.</p>
-        <p id="E9">¿Confirma productos para agregar?</p>
-        <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
-        <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
+        <p id="E9">¿Confirma el registro de este producto?</p>
+        <button type="button" id="confirmar" onclick="Felicitaciones()">Sí, confirmo.</button>
+        <button type="button" id="no-confirmar" onclick="goBack()">No, quiero volver al formulario.</button>
       </div>
       <br>
-      <form id="formulario" action="#" onsubmit="Felicitaciones()">
+      <form id="formulario" action="#">
         <label for="tipo-producto">Tipo producto:</label><br>
         <select id="tipo-producto" name="tipo-producto" size=1 
         onfocus='this.size=3' onblur='this.size=1' 
-        onchange='this.size=1; this.blur(); setFrutaOrVerdura(this.value);'> <!--selectFrutaOrVerdura(this.value);-->
-          <option value="0">Seleccionar...</option>
+        onchange='this.size=1; this.blur(); setFrutaOrVerdura(this.value);'>
+          <option value="0">Seleccionar tipo de producto</option>
           <option value="1">Fruta</option>
           <option value="2">Verdura</option>
         </select>
@@ -90,7 +94,7 @@
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form><br>
       <div id="volver">
-        <a href="index.html"> Volver </a>
+        <a href="index.html"> Volver a la portada. </a>
       </div>
     </body>
 </html>

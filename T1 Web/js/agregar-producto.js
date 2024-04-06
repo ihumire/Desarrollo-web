@@ -205,8 +205,7 @@ function Validar() {
 	} else {m8.style.display = "none";}
 
 	if (ValidTipoProducto && ValidProductos && ValidFotos && ValidRegion && ValidComuna
-		&& ValidNombre && (ValidMail || mail.value == "") && 
-		(ValidCelular || celular.value == "") ) {
+		&& ValidNombre && ValidMail && (ValidCelular || celular.value == "") ) {
 		m9.style.display = "block";
 		botonConfirmar.style.display = "block";
 		botonNoConfirmar.style.display = "block";
@@ -247,6 +246,12 @@ function Felicitaciones() {
 	let mail = document.getElementById("mail");
 	let celular = document.getElementById("celular");
 	
+	let felicitacion = document.getElementById("felicitacion");
+	let space = document.getElementById("top");
+	
+	space.style.display = "none";
+	felicitacion.style.display = "block";
+	
 	TipoProducto.disabled = false;
 	producto1.disabled = false;
 	producto2.disabled = false;
@@ -261,7 +266,7 @@ function Felicitaciones() {
 	mail.disabled = false;
 	celular.disabled = false;
 	
-	alert("Agregación exitosa de productos.");
+
 }
 
 function goBack() {
