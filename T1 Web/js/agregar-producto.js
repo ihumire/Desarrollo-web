@@ -124,6 +124,9 @@ function Validar() {
 	let fotos = document.getElementById("fotos");
 	let region = document.getElementById("region");
 	let comuna = document.getElementById("comuna");
+	let nombre = document.getElementById("nombre");
+	let mail = document.getElementById("mail");
+	let celular = document.getElementById("celular");
 
 
 	tipoProducto.required = true;
@@ -148,7 +151,11 @@ function Validar() {
 	let ValidRegion = region.value != "0";
 	comuna.required = true;
 	let ValidComuna = comuna.value != "--Seleccione una comuna--";
-
+	nombre.required = true;
+	let ValidNombre = nombre.value.length > 2 && nombre.value.length < 81;
+	mail.required = true;
+	let ValidMail = /^[^\s@]+@[^\s@]+\.com/.test(mail.value);
+	let ValidCelular = /^\+569 (\d{4}) (\d{4})/.test(celular.value);
 	
 	let space = document.getElementById("top");
 	let m1 = document.getElementById("E1");
@@ -156,6 +163,9 @@ function Validar() {
 	let m3 = document.getElementById("E3");
 	let m4 = document.getElementById("E4");
 	let m5 = document.getElementById("E5");
+	let m6 = document.getElementById("E6");
+	let m7 = document.getElementById("E7");
+	let m8 = document.getElementById("E8");
 	let m9 = document.getElementById("E9");
 	let botonConfirmar = document.getElementById("confirmar");
 	let botonNoConfirmar = document.getElementById("no-confirmar");
@@ -181,8 +191,22 @@ function Validar() {
 	if (!ValidComuna) {
 		m5.style.display = "block";
 	} else {m5.style.display = "none";}
+	
+	if (!ValidNombre) {
+		m6.style.display = "block";
+	} else {m6.style.display = "none";}
 
-	if (ValidTipoProducto && ValidProductos && ValidFotos && ValidRegion && ValidComuna) {
+	if (!ValidMail) {
+		m7.style.display = "block";
+	} else {m7.style.display = "none";}
+
+	if ((!ValidCelular) && (celular.value != "")) {
+		m8.style.display = "block";
+	} else {m8.style.display = "none";}
+
+	if (ValidTipoProducto && ValidProductos && ValidFotos && ValidRegion && ValidComuna
+		&& ValidNombre && (ValidMail || mail.value == "") && 
+		(ValidCelular || celular.value == "") ) {
 		m9.style.display = "block";
 		botonConfirmar.style.display = "block";
 		botonNoConfirmar.style.display = "block";
@@ -196,13 +220,15 @@ function Validar() {
 		fotos.disabled = true;
 		region.disabled = true;
 		comuna.disabled = true;
+		nombre.disabled = true;
+		mail.disabled = true;
+		celular.disabled = true;
 	} 
 	else {
 		m9.style.display = "none";
 		botonConfirmar.style.display = "none";
 		botonNoConfirmar.style.display = "none";
 	}
-	
 }
 
 function Felicitaciones() {
@@ -217,6 +243,9 @@ function Felicitaciones() {
 	let fotos = document.getElementById("fotos");
 	let region = document.getElementById("region");
 	let comuna = document.getElementById("comuna");
+	let nombre = document.getElementById("nombre");
+	let mail = document.getElementById("mail");
+	let celular = document.getElementById("celular");
 	
 	TipoProducto.disabled = false;
 	producto1.disabled = false;
@@ -227,7 +256,10 @@ function Felicitaciones() {
 	descripcion.disabled = false;
 	fotos.disabled = false;
 	region.disabled = false;
-	comuna,disabled = false;
+	comuna.disabled = false;
+	nombre.disabled = false;
+	mail.disabled = false;
+	celular.disabled = false;
 	
 	alert("Agregación exitosa de productos.");
 }
@@ -244,6 +276,9 @@ function goBack() {
 	let fotos = document.getElementById("fotos");
 	let region = document.getElementById("region");
 	let comuna = document.getElementById("comuna");
+	let nombre = document.getElementById("nombre");
+	let mail = document.getElementById("mail");
+	let celular = document.getElementById("celular");
 
 	let space = document.getElementById("top");
 	let m9 = document.getElementById("E9");
@@ -264,4 +299,7 @@ function goBack() {
 	fotos.disabled = false;
 	region.disabled = false;
 	comuna.disabled = false;
+	nombre.disabled = false;
+	mail.disabled = false;
+	celular.disabled = false;
 }

@@ -12,6 +12,9 @@
         <p id="E3">Error: Ingrese entre uno y tres archivos.</p>
         <p id="E4">Error: Seleccione una región.</p>
         <p id="E5">Error: Seleccione una comuna</p>
+        <p id="E6">Error: Ingrese un nombre de productor válido</p>
+        <p id="E7">Error: Ingrese un email de productor válido</p>
+        <p id="E8">Error: Ingrese un número de celular de productor válido.</p>
         <p id="E9">¿Confirma productos para agregar?</p>
         <button type="submit" id="confirmar" form="formulario">Sí, confirmo</button>
         <button type="button" id="no-confirmar" onclick="goBack()">No, volver</button>
@@ -50,7 +53,7 @@
         <label for="des">Descripción:</label><br>
         <textarea cols="50" rows="4" id="descripcion" name="descripcion">Descripción
         </textarea><br>
-        <label for="pics">Fotos de productos:</label><br>
+        <label for="fotos">Fotos de productos:</label><br>
         <input type="file" id="fotos" name="fotos" multiple accept="image/*"><br>
         <label for="region">Región:</label><br>
         <select name="region" id="region" size=1
@@ -78,6 +81,12 @@
         <select name="comuna" id="comuna">
           <option>--Seleccione una comuna--</option>
         </select><br>
+        <label for="nombre">Nombre productor:</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+        <label for="mail">Email productor:</label><br>
+        <input type="text" name="mail" id="mail" placeholder="mail@dominio.com"><br>
+        <label for="celular">Número celular productor:</label><br>
+        <input type="text" name="celular" id="celular" placeholder="+569 xxxx xxxx"><br>
         <input type="button" value="Agregar Producto(s)" onclick="Validar()">
       </form>
     </body>
