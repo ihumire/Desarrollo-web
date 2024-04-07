@@ -121,7 +121,6 @@ function Validar() {
 	let producto4 = document.getElementById("producto4");
 	let producto5 = document.getElementById("producto5");
 	let descripcion = document.getElementById("descripcion");
-	let fotos = document.getElementById("fotos");
 	let region = document.getElementById("region");
 	let comuna = document.getElementById("comuna");
 	let nombre = document.getElementById("nombre");
@@ -233,7 +232,6 @@ function Felicitaciones() {
 	let producto4 = document.getElementById("producto4");
 	let producto5 = document.getElementById("producto5");
 	let descripcion = document.getElementById("descripcion");
-	let fotos = document.getElementById("fotos");
 	let region = document.getElementById("region");
 	let comuna = document.getElementById("comuna");
 	let nombre = document.getElementById("nombre");
