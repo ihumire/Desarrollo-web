@@ -7,9 +7,12 @@
         <script src="../js/agregar-pedido.js"></script>
     </head>
     <body>
+      <h1>Formulario de pedido de productos.</h1>
       <div id="felicitacion" >
         <p>Hemos recibido su pedido. Muchas gracias.</p>
-        <a href="index.html"> Volver a la portada. </a><br>
+        <button type="button" id="volver-portada" onclick="window.location.href='../html/index.html'">
+          Volver a la portada.
+        </button>
       </div>
       <div id="top" >
         <p id="E1">Error: Seleccione el tipo de producto.</p>
@@ -90,8 +93,6 @@
         <input type="text" name="celular" id="celular" placeholder="+569 xxxx xxxx"><br>
         <input type="button" value="Agregar Pedido" onclick="Validar()">
       </form><br>
-      <div id="volver">
-        <a href="index.html"> Volver a la portada. </a>
-      </div>
+      <a class="a1" href="../html/index.html"> Volver a la portada. </a>
     </body>
 </html>
