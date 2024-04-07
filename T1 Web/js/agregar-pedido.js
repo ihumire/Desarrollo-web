@@ -146,7 +146,6 @@ function Validar() {
 		}
 	}
 
-	let ValidFotos = fotos.files.length > 0 && fotos.files.length < 4;
 	region.required = true;
 	let ValidRegion = region.value != "0";
 	comuna.required = true;
@@ -199,7 +198,7 @@ function Validar() {
 		m7.style.display = "block";
 	} else {m7.style.display = "none";}
 
-	if (ValidTipoProducto && ValidProductos && ValidFotos && ValidRegion && ValidComuna
+	if (ValidTipoProducto && ValidProductos && ValidRegion && ValidComuna
 		&& ValidNombre && ValidMail && (ValidCelular || celular.value == "") ) {
 		m8.style.display = "block";
 		botonConfirmar.style.display = "block";
