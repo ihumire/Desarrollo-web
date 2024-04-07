@@ -1,61 +1,61 @@
-const productos0 = ["--Seleccione un producto--"];
-const productosFrutas = ["--Seleccione un producto--", "Arándano", "Frambuesa", "Frutilla", "Grosella", "Mora", "Limón", "Mandarina", "Naranja", "Pomelo", 
+const productos0 = ["Seleccione un producto"];
+const productosFrutas = ["Seleccione un producto", "Arándano", "Frambuesa", "Frutilla", "Grosella", "Mora", "Limón", "Mandarina", "Naranja", "Pomelo", 
 "Melón", "Sandía", "Palta", "Chirimoya", "Coco", "Dátil", "Kiwi", "Mango", "Papaya", "Piña", "Plátano", 
 "Damasco", "Cereza", "Ciruela", "Higo", "Kaki", "Manzana", "Durazno", "Nectarin", "Níspero", "Pera", "Uva", 
 "Almendra", "Avellana", "Maní", "Castaña", "Nuez", "Pistacho"];
-const productosVerduras = ["--Seleccione un producto--", "Brócoli", "Repollo", "Coliflor", "Rábano", "Alcachofa", "Lechuga", "Zapallo", "Pepino", "Haba", "Maíz", 
+const productosVerduras = ["Seleccione un producto", "Brócoli", "Repollo", "Coliflor", "Rábano", "Alcachofa", "Lechuga", "Zapallo", "Pepino", "Haba", "Maíz", 
 "Champiñón", "Acelga", "Apio", "Espinaca", "Perejil", "Ajo", "Cebolla", "Espárrago", "Puerro", "Acelga", 
 "Espinaca", "Remolacha", "Berenjena", "Papa", "Pimiento", "Tomate", "Zanahoria"];
 
 const productosTotales = [productos0, productosFrutas,productosVerduras];
 
-const comunas0 = ["--Seleccione una comuna--"];
-const comunas1 = ["--Seleccione una comuna--","Alto Hospicio","Camiña","Colchane","Huara",
+const comunas0 = ["Seleccione una comuna"];
+const comunas1 = ["Seleccione una comuna","Alto Hospicio","Camiña","Colchane","Huara",
 "Iquique","Pica","Pozo Almonte"];
-const comunas2 = ["--Seleccione una comuna--","Antofagasta","Calama","María Elena","Mejillones",
+const comunas2 = ["Seleccione una comuna","Antofagasta","Calama","María Elena","Mejillones",
 "Ollagüe","San Pedro de Atacama","Sierra Gorda","Taltal","Tocopilla"];
-const comunas3 = ["--Seleccione una comuna--","Alto del Carmen","Caldera","Chañaral",
+const comunas3 = ["Seleccione una comuna","Alto del Carmen","Caldera","Chañaral",
 "Copiapó","Diego de Almagro","Freirina","Huasco","Tierra Amarilla","Vallenar"];
-const comunas4 = ["--Seleccione una comuna--","Andacollo","Canela","Combarbalá","Coquimbo",
+const comunas4 = ["Seleccione una comuna","Andacollo","Canela","Combarbalá","Coquimbo",
 "Illapel","La Higuera","La Serena","Los Vilos","Monte Patria","Ovalle","Paihuano","Punitaqui",
 "Río Hurtado","Salamanca","Vicuña"];
-const comunas5 = ["--Seleccione una comuna--","Algarrobo","Cabildo","Calle Larga","Cartagena",
+const comunas5 = ["Seleccione una comuna","Algarrobo","Cabildo","Calle Larga","Cartagena",
 "Casablanca","Catemu","Concón","El Quisco","El Tabo","Hijuelas","Juan Fernández","La Calera",
 "La Cruz","La Ligua","Limache","Llay-Llay","Los Andes","Nogales","Olmué","Panquehue","Papudo",
 "Petorca","Puchuncaví","Putaendo","Quillota","Quilpué","Quintero","Rapa Nui","Rinconada",
 "San Antonio","San Esteban","San Felipe","Santa María","Santo Domingo","Valparaíso",
 "Villa Alemana","Viña del Mar","Zapallar"];
-const comunas6 = ["--Seleccione una comuna--","Chépica","Chimbarongo","Codegua","Coinco",
+const comunas6 = ["Seleccione una comuna","Chépica","Chimbarongo","Codegua","Coinco",
 "Coltauco","Doñihue","Graneros","La Estrella","Las Cabras","Litueche","Lolol","Machalí",
 "Malloa","Marchigüe","Mostazal","Nancagua","Navidad","Olivar","Palmilla","Paredones",
 "Peralillo","Peumo","Pichidegua","Pichilemu","Placilla","Pumanque","Quinta de Tilcoco",
 "Rancagua","Rengo","Requínoa","San Fernando","Santa Cruz","San Vicente de Tagua-Tagua"];
-const comunas7 = ["--Seleccione una comuna--","Cauquenes","Chanco","Colbún","Constitución",
+const comunas7 = ["Seleccione una comuna","Cauquenes","Chanco","Colbún","Constitución",
 "Curepto","Curicó","Empedrado","Hualañé","Licantén","Linares","Longaví","Maule","Molina",
 "Parral","Pelarco","Pelluhue","Pencahue","Rauco","Retiro","Río Claro","Romeral",
 "Sagrada Familia","San Clemente","San Javier","San Rafael","Talca","Teno","Vichuquén",
 "Villa Alegre","Yerbas Buenas"];
-const comunas8 = ["--Seleccione una comuna--","Alto Biobío","Antuco","Arauco","Cabrero",
+const comunas8 = ["Seleccione una comuna","Alto Biobío","Antuco","Arauco","Cabrero",
 "Cañete","Chiguayante","Concepción","Contulmo","Coronel","Curanilahue","Florida","Haulpén",
 "Hualqui","Laja","Lebu","Los Álamos","Los Ángeles","Lota","Mulchén","Nacimiento","Negrete",
 "Penco","Quilaco","Quilleco","San Pedro de la Paz","San Rosendo","Santa Bárbara",
 "Santa Juana","Talcahuano","Tirúa","Tomé","Tucapel","Yumbel"];
-const comunas9 = ["--Seleccione una comuna--","Angol","Carahue","Cholchol","Collipulli",
+const comunas9 = ["Seleccione una comuna","Angol","Carahue","Cholchol","Collipulli",
 "Cunco","Curacautín","Curarrehue","Ercilla","Freire","Galvarino","Gorbea","Lautaro",
 "Loncoche","Lonquimay","Los Sauces","Lumaco","Melipeuco","Nueva Imperial","Padre las Casas",
 "Perquenco","Pitrufquén","Pucón","Puerto Saavedra","Purén","Renaico","Temuco","Teodoro Schmidt",
 "Toltén","Traiguén","Victoria","Vilcún","Villarrica"];
-const comunas10 = ["--Seleccione una comuna--","Ancud","Calbuco","Castro","Chaitén","Chonchi",
+const comunas10 = ["Seleccione una comuna","Ancud","Calbuco","Castro","Chaitén","Chonchi",
 "Cochamó","Curaco de Vélez","Dalcahue","Fresia","Frutillar","Futaleufú","Hualaihué",
 "Llanquihue","Los Muermos","Maullín","Osorno","Palena","Puerto Montt","Puerto Octay",
 "Puerto Varas","Puqueldón","Purranque","Puyehue","Queilen","Quemchi","Quellón","Quinchao",
 "Río Negro","San Juan de la Costa","San Pablo"];
-const comunas11 = ["--Seleccione una comuna--","Aysén","Chile Chico","Cisnes","Cochrane",
+const comunas11 = ["Seleccione una comuna","Aysén","Chile Chico","Cisnes","Cochrane",
 "Coyhaique","Guaitecas","Lago Verde","O'Higgins","Río Ibáñez","Tortel"];
-const comunas12 = ["--Seleccione una comuna--","Antártica","Cabo de Hornos","Laguna Blanca",
+const comunas12 = ["Seleccione una comuna","Antártica","Cabo de Hornos","Laguna Blanca",
 "Natales","Porvenir","Primavera","Punta Arenas","Río Verde","San Gregorio","Timaukel",
 "Torres del Paine"];
-const comunas13 = ["--Seleccione una comuna--","Alhué","Buin","Calera de Tango","Cerrillos",
+const comunas13 = ["Seleccione una comuna","Alhué","Buin","Calera de Tango","Cerrillos",
 "Cerro Navia","Colina","Conchalí","Curacaví","El Bosque","El Monte","Estación Central",
 "Huechuraba","Independencia","Isla de Maipo","La Cisterna","La Granja","La Florida","La Pintana",
 "La Reina","Lampa","Las Condes","Lo Barnechea","Lo Espejo","Lo Prado","Macul","Maipú",
@@ -63,10 +63,10 @@ const comunas13 = ["--Seleccione una comuna--","Alhué","Buin","Calera de Tango"
 "Peñalolén","Pirque","Providencia","Pudahuel","Puente Alto","Quilicura","Quinta Normal",
 "Recoleta","Renca","San Bernardo","San Miguel","San Joaquín","San José de Maipo","San Pedro",
 "San Ramón","Santiago","Talagante","Til Til","Vitacura"];
-const comunas14 = ["--Seleccione una comuna--","Corral","Futrono","Lago Ranco","Lanco",
+const comunas14 = ["Seleccione una comuna","Corral","Futrono","Lago Ranco","Lanco",
 "La Unión","Los Lagos","Máfil","Mariquina","Paillaco","Panguipulli","Río Bueno","Valdivia"];
-const comunas15 = ["--Seleccione una comuna--","Arica","Camarones","General Lagos","Putre"];
-const comunas16 = ["--Seleccione una comuna--","Bulnes","Chillán","Chillán Viejo",
+const comunas15 = ["Seleccione una comuna","Arica","Camarones","General Lagos","Putre"];
+const comunas16 = ["Seleccione una comuna","Bulnes","Chillán","Chillán Viejo",
 "Cobquecura","Coelemu","Coihueco","El Carmen","Ninhue","Ñiquén","Pemuco","Pinto","Portezuelo",
 "Quillón","Quirihue","Ránquil","San Carlos","San Fabián","San Ignacio","San Nicolás",
 "Trehuaco","Yungay"];
@@ -130,11 +130,11 @@ function Validar() {
 
 	tipoProducto.required = true;
 	let ValidTipoProducto = tipoProducto.value != "0";
-	let ValidProducto1 = producto1.value != "--Seleccione un producto--";
-	let ValidProducto2 = producto2.value != "--Seleccione un producto--";
-	let ValidProducto3 = producto3.value != "--Seleccione un producto--";
-	let ValidProducto4 = producto4.value != "--Seleccione un producto--";
-	let ValidProducto5 = producto5.value != "--Seleccione un producto--";
+	let ValidProducto1 = producto1.value != "Seleccione un producto";
+	let ValidProducto2 = producto2.value != "Seleccione un producto";
+	let ValidProducto3 = producto3.value != "Seleccione un producto";
+	let ValidProducto4 = producto4.value != "Seleccione un producto";
+	let ValidProducto5 = producto5.value != "Seleccione un producto";
 
 	let ValidProductos = false;
 	let listValidProductos = [ValidProducto1, ValidProducto2, ValidProducto3, ValidProducto4, ValidProducto5];
@@ -148,7 +148,7 @@ function Validar() {
 	region.required = true;
 	let ValidRegion = region.value != "0";
 	comuna.required = true;
-	let ValidComuna = comuna.value != "--Seleccione una comuna--";
+	let ValidComuna = comuna.value != "Seleccione una comuna";
 	nombre.required = true;
 	let ValidNombre = nombre.value.length > 2 && nombre.value.length < 81;
 	mail.required = true;
