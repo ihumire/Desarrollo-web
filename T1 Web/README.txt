@@ -1,0 +1,1 @@
+Para inicializar la tarea abrir la carpeta T1 Web.
