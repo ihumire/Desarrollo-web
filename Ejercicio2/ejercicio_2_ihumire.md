@@ -14,13 +14,13 @@ Tenga en cuenta las siguientes observaciones al realizar el ejercicio:
 
 ¿Qué es el ataque de "Cross Site Scripting" (XSS) y cómo podría prevenirse? Describa un escenario en el cual este tipo de ataque podría ser especialmente peligroso. Para responder esta pregunta, puede basarse en [este articulo de la OWASP](https://owasp.org/www-community/attacks/xss/).
 
-**Respuesta**: Un "Cross Site Scripting" (XSS) es un tipo de inyección de un script malicioso. Generalmente la inyeccin puede venir en un segmento de JavaScript, pero también puede incluir HTML, Flash o cualquier otro tipo de código que el navegador pueda ejecutar.
+**Respuesta**: Un "Cross Site Scripting" (XSS) es un tipo de inyección de un script malicioso. Generalmente, la inyección puede venir en un segmento de JavaScript, pero también puede incluir HTML, Flash o cualquier otro tipo de código que el navegador pueda ejecutar.
 
 Para prevenir los ataques XSS podemos recurrir a revisar nuestro código y buscar dónde las solicitudes de HTML o texto podrían permitir que se devuelva información privada, tal como cookies o contraseñas de usuarios u otra información sensible, en el HTML o texto que se genera.
 
 Otra manera de prevenir estos ataques es realizar una validación a las request que realizamos en nuestra página web.
 
-Un escenario peligroso podria ser cuando un atacante busca robar nuestras cookies. Aqui si no realizamos una correcta validación 
+Un escenario peligroso podría ser el robo de cookies (archivos de datos, preferencias de usuarios, etc.) a algún usuario autenticado o registrado en la aplicación web. En tal situación, el atacante podría realizar acciones maliciosas (ej: suplantación de identidad).
 
 
 
