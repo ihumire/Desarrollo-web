@@ -22,11 +22,28 @@ Otra manera de prevenir estos ataques es realizar una validación a las request 
 
 Un escenario peligroso podría ser el robo de cookies (archivos de datos, preferencias de usuarios, etc.) a algún usuario autenticado o registrado en la aplicación web. En tal situación, el atacante podría realizar acciones maliciosas (ej: suplantación de identidad).
 
-
-
 ## Pregunta 2
 Como se mencionó en auxiliar, existen varias herramientas que se pueden utilizar para programar aplicaciones web más complejas que las que hemos visto en el curso. Esta pregunta busca que ud. investigue 3 librerías de javascript o *frameworks* de front-end y describa sus principales características, ventajas, desventajas y ejemplos de uso. Finalmente, indique cuál de las tecnologías presentadas utilizaria para implementar su página web personal y por qué.
 
 **Nota:** Se espera que ud. escriba un breve resumen de cada tecnología, seguido de al menos 2 ventajas y 2 desventajas de cada una.
 
 **Respuesta**:
+
+React:
+- Descripción:
+- Ventajas: 
+- Desventajas:
+
+Vue.js:
+- Descripción:
+- Ventajas: 
+- Desventajas:
+
+Svelte:
+- Descripción:
+- Ventajas: 
+- Desventajas:
+
+Opinión uso personal: 
+
+Referencias: https://4geeksacademy.com/es/aprender-a-programar/los-5-frameworks-fundamentales-para-frontend
