@@ -55,3 +55,5 @@ https://4geeksacademy.com/es/aprender-a-programar/los-5-frameworks-fundamentales
 https://ebac.mx/blog/que-es-react
 
 https://rootstack.com/es/blog/vuejs-ventajas-desventajas
+
+https://kinsta.com/es/blog/svelte-vs-react/
