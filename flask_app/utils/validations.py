@@ -1,6 +1,8 @@
 import re
 import filetype
 
+# aqui debemos hacer las validaciones del backend
+"""
 def validate_username(value):
     return value and len(value) > 4
 
@@ -50,3 +52,4 @@ def validate_conf_img(conf_img):
 
 def validate_confession(conf_text, conf_img):
     return validate_conf_text(conf_text) and validate_conf_img(conf_img)
+"""
