@@ -1,0 +1,112 @@
+{% extends 'productos/base.html' %}
+
+{% block title %}
+Agregar Producto
+{% endblock %}
+
+{% block css %}
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='css/agregar.css') }}"
+    />
+{% endblock %}
+
+{% block javascript %}
+    <script
+        src="{{ url_for('static', filename='js/agregar-producto.js') }}"
+    />
+{% endblock %}
+
+{% block content %} 
+      <h1>Formulario de agregación de productos.</h1>
+      <div id="felicitacion" >
+        <p>Hemos recibido el registro de producto. Muchas gracias.</p>
+        <button type="button" onclick="window.location.href='{{ url_for('index') }}'">
+          Volver a la portada.
+        </button>
+      </div>
+      <div id="top" >
+        <p id="E1">Error: Seleccione el tipo de producto.</p>
+        <p id="E2">Error: Seleccione mínimo un producto.</p>
+        <p id="E3">Error: Ingrese entre uno y tres archivos.</p>
+        <p id="E4">Error: Seleccione una región.</p>
+        <p id="E5">Error: Seleccione una comuna.</p>
+        <p id="E6">Error: Ingrese un nombre de productor válido.</p>
+        <p id="E7">Error: Ingrese un email de productor válido.</p>
+        <p id="E8">Error: Ingrese un número de celular de productor válido.</p>
+        <p id="E9">¿Confirma el registro de este producto?</p>
+        <button type="button" id="confirmar" onclick="Validar2()">Sí, confirmo.</button>
+        <button type="button" id="no-confirmar" onclick="goBack()">No, quiero volver al formulario.</button>
+      </div>
+      <br>
+      <form id="formulario" action="{{url_for('post_info')}}" method="post" enctype="multipart/form-data">
+        <label for="tipo-producto">Tipo producto:</label><br>
+        <select id="tipo-producto" name="tipo-producto" size=1 
+        onfocus='this.size=3' onblur='this.size=1' 
+        onchange='this.size=1; this.blur(); setFrutaOrVerdura(this.value);'>
+          <option value="0">Seleccionar tipo de producto</option>
+          <option value="1">Fruta</option>
+          <option value="2">Verdura</option>
+        </select>
+        <br>
+        <label for="producto1">Producto 1:</label><br>
+        <select name="producto1" id="producto1">
+          <option value="Seleccione un producto">Seleccione un producto</option>
+        </select><br>
+        <label for="producto2">Producto 2:</label><br>
+        <select name="producto2" id="producto2">
+          <option value="Seleccione un producto">Seleccione un producto</option>
+        </select><br>
+        <label for="producto3">Producto 3:</label><br>
+        <select name="producto3" id="producto3">
+          <option value="Seleccione un producto">Seleccione un producto</option>
+        </select><br>
+        <label for="producto4">Producto 4:</label><br>
+        <select name="producto4" id="producto4">
+          <option value="Seleccione un producto">Seleccione un producto</option>
+        </select><br>
+        <label for="producto5">Producto 5:</label><br>
+        <select name="producto5" id="producto5">
+          <option value="Seleccione un producto">Seleccione un producto</option>
+        </select><br>
+        <label for="descripcion">Descripción:</label><br>
+        <textarea cols="30" rows="3" id="descripcion" name="descripcion"></textarea><br>
+        <label for="fotos">Fotos de productos:</label><br>
+        <input type="file" id="fotos" name="fotos" multiple accept="image/*"><br>
+        <label for="region">Región:</label><br>
+        <select name="region" id="region" size=1
+        onfocus='this.size=8;' onblur='this.size=1;' 
+        onchange='this.size=1; this.blur(); setComuna(this.value); '>
+          <option value="0">Seleccione su región</option>
+          <option value="15">Arica y Parinacota</option>
+          <option value="1">Tarapacá</option>
+          <option value="2">Antofagasta</option>
+          <option value="3">Atacama</option>
+          <option value="4">Coquimbo</option>
+          <option value="5">Valparaíso</option>
+          <option value="13">Metropolitana</option>
+          <option value="6">O'Higgins</option>
+          <option value="7">Maule</option>
+          <option value="16">Ñuble</option>
+          <option value="8">Bio-Bio</option>
+          <option value="9">Araucanía</option>
+          <option value="14">Los Ríos</option>
+          <option value="10">Los Lagos</option>
+          <option value="11">Aysén</option>
+          <option value="12">Magallanes</option>
+        </select><br>
+        <label for="comuna">Comuna:</label><br>
+        <select name="comuna" id="comuna">
+          <option>Seleccione una comuna</option>
+        </select><br>
+        <label for="nombre">Nombre productor:</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+        <label for="mail">Email productor:</label><br>
+        <input type="text" name="mail" id="mail" placeholder="mail@dominio.com"><br>
+        <label for="celular">Número celular productor:</label><br>
+        <input type="text" name="celular" id="celular" placeholder="+569 xxxx xxxx"><br>
+        <input type="button" value="Agregar Producto(s)" onclick="Validar()">
+      </form><br>
+      <a class="a1" href="{{ url_for('index') }}"> Volver a la portada. </a>
+{% endblock %}

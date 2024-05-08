@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+index
+{% endblock %}
+
+{% block css %}
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/index.css') }}"
+    />
+{% endblock %}
+
+{% block content %} 
+<div class="barra">
+    <ul id="indices">
+        <li><a href="{{ url_for('agregarProducto') }}">Agregar producto</a></li>
+        <li><a href="{{ url_for('verProductos') }}">Ver productos</a></li>
+        <li><a href="{{ url_for('agregarPedido') }}">Agregar pedido</a></li>
+        <li><a href="{{ url_for('verPedidos') }}">Ver pedidos</a></li>
+    </ul>
+</div>
+<div id="bienvenida">
+    <h1>Bienvenido a mi página web</h1>
+    <p>
+        En esta página web creamos una simulación de una distribuidora de frutas y verduras.
+        En el menú superior podras elegir entre agregar o ver productos o pedidos dependiendo
+        de tu necesidad como usuario. Disfruta!!
+    </p>
+</div>
+{% endblock %}
