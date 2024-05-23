@@ -4,8 +4,7 @@ const productosFrutas = ["Seleccione un producto", "Arándano", "Frambuesa", "Fr
 "Damasco", "Cereza", "Ciruela", "Higo", "Kaki", "Manzana", "Durazno", "Nectarin", "Níspero", "Pera", "Uva", 
 "Almendra", "Avellana", "Maní", "Castaña", "Nuez", "Pistacho"];
 const productosVerduras = ["Seleccione un producto", "Brócoli", "Repollo", "Coliflor", "Rábano", "Alcachofa", "Lechuga", "Zapallo", "Pepino", "Haba", "Maíz", 
-"Champiñón", "Acelga", "Apio", "Espinaca", "Perejil", "Ajo", "Cebolla", "Espárrago", "Puerro", "Acelga", 
-"Espinaca", "Remolacha", "Berenjena", "Papa", "Pimiento", "Tomate", "Zanahoria"];
+"Champiñón", "Acelga", "Apio", "Espinaca", "Perejil", "Ajo", "Cebolla", "Espárrago", "Puerro", "Remolacha", "Berenjena", "Papa", "Pimiento", "Tomate", "Zanahoria"];
 
 const productosTotales = [productos0, productosFrutas,productosVerduras];
 

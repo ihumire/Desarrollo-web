@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         <title>Ver productos</title>
-        <link rel="stylesheet" type="text/css" href="../css/ver.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/ver.css') }}"/>
     </head>
 	<body>
 		<h1> Listado de productos agregados </h1><br>
@@ -73,6 +73,6 @@
 				</td> 
 			</tr>
 		</table><br><br>
-		<a class="a1" href="../index.html"> Volver a la portada. </a>
+		<a class="a1" "{{ url_for('index') }}"> Volver a la portada. </a>
 	</body>
 </html>

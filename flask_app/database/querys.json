@@ -1,0 +1,17 @@
+{
+    "insert_producto": "INSERT INTO producto (tipo, descripcion, comuna_id, nombre_productor, email_productor, celular_productor) VALUES (%s,%s,%s,%s,%s,%s)",
+    "get_productos": "SELECT id, tipo, descripcion, comuna_id, nombre_productor, email_productor, celular_productor FROM producto ORDER BY id DESC",
+    "get_productos_5": "SELECT id, tipo, descripcion, comuna_id, nombre_productor, email_productor, celular_productor FROM producto ORDER BY id DESC LIMIT 0, 5",
+    "get_productos_5i": "SELECT id, tipo, descripcion, comuna_id, nombre_productor, email_productor, celular_productor FROM producto ORDER BY id DESC LIMIT %s, 5",
+    "get_productos_5_next": "SELECT id, tipo, descripcion, comuna_id, nombre_productor, email_productor, celular_productor FROM producto ORDER BY id DESC LIMIT 5, 5",
+    "get_productos_5_with_name_comuna": "SELECT PRO.id, PRO.tipo, PRO.descripcion, COM.nombre, PRO.nombre_productor, PRO.email_productor, PRO.celular_productor FROM producto PRO, comuna COM WHERE PRO.comuna_id = COM.id ORDER BY id DESC LIMIT 0, 5",
+    "get_productos_5_with_name_comuna_next": "SELECT PRO.id, PRO.tipo, PRO.descripcion, COM.nombre, PRO.nombre_productor, PRO.email_productor, PRO.celular_productor FROM producto PRO, comuna COM WHERE PRO.comuna_id = COM.id ORDER BY id DESC LIMIT 5, 5",
+    "insert_pt": "INSERT INTO producto_verdura_fruta (producto_id, tipo_verdura_fruta_id) VALUES (%s,%s)",
+    "get_tp_by_id": "SELECT TVF.nombre FROM tipo_verdura_fruta TVF, producto_verdura_fruta PVF WHERE TVF.id=PVF.tipo_verdura_fruta_id AND PVF.producto_id=%s",
+    "insert_foto": "INSERT INTO foto (ruta_archivo, nombre_archivo, producto_id) VALUES (%s,%s,%s)",
+    "get_fotos_by_id": "SELECT ruta_archivo, nombre_archivo FROM foto WHERE producto_id=%s",
+    "get_last_insert_id": "SELECT LAST_INSERT_ID()",
+    "get_comuna_by_id": "SELECT comuna.nombre FROM producto, comuna WHERE producto.comuna_id = comuna.id AND producto.id = (%s)",
+    "get_producto_by_id": "select * from producto where id = %s",
+    "get_region_by_id" : "select region.nombre from region where region.id = ( select comuna.region_id from comuna where comuna.id = (select producto.comuna_id from producto where producto.id = %s))"
+}
